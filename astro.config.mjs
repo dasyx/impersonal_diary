@@ -1,16 +1,13 @@
 import { defineConfig } from "astro/config";
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
+import netlify from "@astrojs/netlify";
 
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [svelte(), tailwind()],
-  renderers: ["@astrojs/renderer-svelte"],
   output: "server",
-  adapter: vercel(),
-  framework: {
-    type: "svelte",
-  },
+  adapter: netlify(),
 });
