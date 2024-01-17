@@ -1,0 +1,24 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Home from "../components/Home.astro";
+// @ts-ignore
+import Signup from "../components/Signup.svelte";
+import Layout from "../layouts/Layout.astro";
+//import Test2 from "../components/Test2.svelte";
+
+/* import checkSupabaseConnection from "../utils/supabaseClient";
+
+checkSupabaseConnection(); */
+//import checkSupabaseConnection from "../utils/supabaseClient";
+
+//checkSupabaseConnection();
+
+// @ts-ignore
+---
+
+<Layout
+  title="Impersonal Diary - Votre Journal Intime en Ligne, Écrivez, Partagez, Rêvez"
+>
+  <Navbar />
+  <Home />
+</Layout>
